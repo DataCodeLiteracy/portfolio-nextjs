@@ -30,25 +30,39 @@
 }
 
 .home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(182, 236, 218);
 }
 
 .experience {
+  display: flex;
+  justify-content: center;
   background-color: rgb(241, 210, 215);
 }
 
 .about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(246, 220, 173);
 }
 
 .skills {
+  display: flex;
+  justify-content: center;
   background-color: rgb(188, 194, 236);
 }
 
 .projects {
+  display: flex;
+  justify-content: center;
   background-color: rgb(234, 152, 152);
 }
 
 .contact {
+  display: flex;
+  justify-content: center;
   background-color: rgb(235, 155, 235);
 }

@@ -1,0 +1,47 @@
+.container {
+  width: 70%;
+  margin-top: 60px;
+}
+
+.container h1 {
+  font-size: 40px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -20px;
+}
+
+.buttonGroup > button {
+  font-size: 16px;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.description {
+  margin: 40px 0 0 40px;
+}
+
+.description div {
+  display: inline-block;
+  border: 1px solid green;
+  border-radius: 20px;
+  width: 40%;
+  padding: 10px;
+  margin: 30px;
+}
+
+.description div h2 {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  margin: -70px 0 0 -50px;
+  background-color: white;
+  border: 1px solid white;
+  transform: rotate(-10deg);
+}
+
+.description div p {
+  line-height: 30px;
+}

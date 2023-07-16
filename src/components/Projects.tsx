@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from '../app/page.module.css'
 import projectStyles from '../components/Projects.module.css'
 

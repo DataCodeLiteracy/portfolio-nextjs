@@ -3,6 +3,12 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import styles from '../app/page.module.css'
+import { TbBrandNextjs } from 'react-icons/tb'
+import { AiFillGithub, AiOutlineMail, AiOutlineOrderedList } from 'react-icons/ai'
+import { MdOutlineKeyboardDoubleArrowUp } from 'react-icons/md'
+import { SiVelog } from 'react-icons/si'
+import Link from 'next/link'
+import ArrowUp from '../components/ArrowUp'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,15 +20,28 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${styles.body}`}>
         <nav className={styles.nav}>
           <div className={styles.logo}>
-            <div>로고</div>
-            <div>contact</div>
+            <TbBrandNextjs className={styles.icon} />
           </div>
-          <div className={styles.toggle}>토글 버튼</div>
+          <div className={styles.contactList}>
+            <Link href="https://github.com/DataCodeLiteracy" target="_blank">
+              <AiFillGithub className={styles.icon} />
+            </Link>
+            <Link href="https://velog.io/@dataliteracy" target="_blank">
+              <SiVelog className={styles.icon} />
+            </Link>
+            <Link href="/">
+              <AiOutlineMail className={styles.icon} />
+            </Link>
+          </div>
+          <button className={styles.toggle}>
+            <AiOutlineOrderedList className={styles.icon} />
+          </button>
         </nav>
         {children}
+        <ArrowUp />
       </body>
     </html>
   )

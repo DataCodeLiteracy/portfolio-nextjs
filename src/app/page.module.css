@@ -1,3 +1,7 @@
+.body {
+  position: relative;
+}
+
 .section {
   width: 100%;
 }
@@ -14,16 +18,36 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
-  color: white;
 }
 
-.logo {
-  display: flex;
+.nav button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 40px;
+  margin-left: 10px;
+  margin-right: 20px;
+  color: rgb(242, 6, 234, 0.6);
 }
 
 .toggle {
   margin: 10px 30px 10px 0;
+}
+
+.arrowUp {
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
 }
 
 .logo div {

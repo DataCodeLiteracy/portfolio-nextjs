@@ -66,5 +66,6 @@
 .contact {
   display: flex;
   justify-content: center;
+  min-height: 100vh;
   background-color: rgb(235, 155, 235);
 }

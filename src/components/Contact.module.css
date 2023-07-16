@@ -7,7 +7,15 @@
   font-size: 40px;
 }
 
+.listWrapper {
+  display: flex;
+}
+
 .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 100px;
   width: 90%;
 }
 
@@ -25,4 +33,10 @@
 .list div div {
   width: 80%;
   font-size: 20px;
+}
+
+.list a {
+  margin: 20px;
+  text-decoration: none;
+  color: black;
 }

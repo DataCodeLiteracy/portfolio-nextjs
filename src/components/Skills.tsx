@@ -19,35 +19,45 @@ const Skills = () => {
         </div>
         <div className={skillsStyles.description}>
           <div>
-            <h2>HTML/CSS</h2>
+            <h2>React</h2>
             <p>
-              웹표준을 지키려 노력합니다. <br />
-              SCSS 문법에 익숙합니다. <br />
-              styled-component, emotion을 활용할 수 있습니다.
+              함수형 프로그래밍을 고려하여 함수 컴포넌트를 사용합니다.
               <br />
-              BEM 방법론을 적용할 수 있습니다.
+              Redux와 같은 상태관리 라이브러리 사용 경험이 있습니다.
               <br />
-              크로스 브라우징에 대응할 수 있습니다.
+              React-Router와 React-query 사용 경험이 있습니다.
               <br />
-              Antd, Chakra, Tailwind 등의 css 라이브러리를 사용할 수 있습니다.
+              리액트 생명주기에 대한 고민이 많습니다.
               <br />
-              keyframe을 활용한 애니메이션 기법을 활용할 수 있습니다.
+              Next.js 사용경험이 있습니다.
             </p>
           </div>
           <div>
             <h2>HTML/CSS</h2>
             <p>
               웹표준을 지키려 노력합니다. <br />
-              SCSS 문법에 익숙합니다. <br />
               styled-component, emotion을 활용할 수 있습니다.
               <br />
               BEM 방법론을 적용할 수 있습니다.
               <br />
-              크로스 브라우징에 대응할 수 있습니다.
+              Tailwind 라이브러리를 사용할 수 있습니다.
+            </p>
+          </div>
+          <div>
+            <h2>JavaScript</h2>
+            <p>
+              ES6+ 문법에 익숙합니다.
               <br />
-              Antd, Chakra, Tailwind 등의 css 라이브러리를 사용할 수 있습니다.
+              webpack을 통한 번들링 사용경험이 있습니다.
+            </p>
+          </div>
+          <div>
+            <h2>TypeScript</h2>
+            <p>
+              타입스크립트를 통해 안정성과 표현력을 중시하는 코드를 작성합니다.
               <br />
-              keyframe을 활용한 애니메이션 기법을 활용할 수 있습니다.
+              객체 지향 프로그래밍에 관심이 많습니다.
+              <br />
             </p>
           </div>
         </div>

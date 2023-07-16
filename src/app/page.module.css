@@ -53,6 +53,7 @@
 
 .skills {
   display: flex;
+  min-height: 100vh;
   justify-content: center;
   background-color: rgb(188, 194, 236);
 }

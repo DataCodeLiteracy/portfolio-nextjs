@@ -11,6 +11,7 @@ import Link from 'next/link'
 import ArrowUp from '../components/ArrowUp'
 import NavList from '../components/NavList'
 import PercentBar from '../components/PercentBar'
+import Email from '../components/Email'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -37,9 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="https://velog.io/@dataliteracy" target="_blank">
               <SiVelog className={styles.icon} />
             </Link>
-            <Link href="/">
-              <AiOutlineMail className={styles.icon} />
-            </Link>
+            <Email icon={true} />
           </div>
           <NavList />
         </nav>

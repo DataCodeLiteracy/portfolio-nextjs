@@ -3,6 +3,9 @@ import styles from '../app/page.module.css'
 import contactStyles from '../components/Contact.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
+import Email from '../components/Email'
+import { AiFillGithub } from 'react-icons/ai'
+import { SiVelog } from 'react-icons/si'
 
 const Contact = () => {
   return (
@@ -13,12 +16,11 @@ const Contact = () => {
           <Image src="/Images/contactme.webp" alt="" width={400} height={400} />
           <div className={contactStyles.list}>
             <div>
-              <button>Email</button>
-              <div>dataliteracy@icloud.com</div>
+              <Email icon={true} address={true} />
             </div>
             <div>
               <Link href="https://github.com/DataCodeLiteracy" target="_blank">
-                GitHub
+                <AiFillGithub />
               </Link>
               <Link href="https://github.com/DataCodeLiteracy" target="_blank">
                 https://github.com/DataCodeLiteracy
@@ -26,7 +28,7 @@ const Contact = () => {
             </div>
             <div>
               <Link href="https://velog.io/@dataliteracy" target="_blank">
-                Blog
+                <SiVelog />
               </Link>
               <Link href="https://velog.io/@dataliteracy" target="_blank">
                 https://velog.io/@dataliteracy

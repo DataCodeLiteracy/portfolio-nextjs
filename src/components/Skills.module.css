@@ -1,6 +1,7 @@
 .container {
   width: 70%;
   margin-top: 60px;
+  padding-bottom: 50px;
 }
 
 .container h1 {
@@ -13,35 +14,36 @@
   margin-top: -20px;
 }
 
-.buttonGroup > button {
+.buttonGroup button {
   font-size: 16px;
   padding: 3px;
   border-radius: 10px;
 }
 
+.buttonGroup button:hover {
+  background-color: rgb(166, 235, 212);
+}
+
 .description {
-  margin: 40px 0 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 
 .description div {
-  display: inline-block;
-  border: 1px solid green;
   border-radius: 20px;
   width: 40%;
   padding: 10px;
-  margin: 30px;
 }
 
 .description div h2 {
-  display: inline-block;
-  text-align: center;
+  font-size: 30px;
   padding: 10px;
-  margin: -70px 0 0 -50px;
-  background-color: white;
-  border: 1px solid white;
-  transform: rotate(-10deg);
+  margin-bottom: 10px;
 }
 
 .description div p {
+  color: gray;
   line-height: 30px;
 }

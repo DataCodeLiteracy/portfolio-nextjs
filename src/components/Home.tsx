@@ -6,7 +6,7 @@ import HomeLogic from '../Hooks/maskAndZoom'
 
 const Home = () => {
   return (
-    <section id="#home" className={`${styles.section} ${styles.home} ${homeStyles.fix_motion}`}>
+    <section id="home" className={`${styles.section} ${styles.home} ${homeStyles.fix_motion}`}>
       <article className={homeStyles.sticky_cont}>
         <div className={homeStyles.cont_box}>
           <div className={`${homeStyles.intro_txt}`}>

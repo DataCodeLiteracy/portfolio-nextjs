@@ -9,6 +9,7 @@ import { MdOutlineKeyboardDoubleArrowUp } from 'react-icons/md'
 import { SiVelog } from 'react-icons/si'
 import Link from 'next/link'
 import ArrowUp from '../components/ArrowUp'
+import NavList from '../components/NavList'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,7 +24,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${inter.className} ${styles.body}`}>
         <nav className={styles.nav}>
           <div className={styles.logo}>
-            <TbBrandNextjs className={styles.icon} />
+            <Link href="#">
+              <TbBrandNextjs className={styles.icon} />
+            </Link>
           </div>
           <div className={styles.contactList}>
             <Link href="https://github.com/DataCodeLiteracy" target="_blank">
@@ -36,9 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <AiOutlineMail className={styles.icon} />
             </Link>
           </div>
-          <button className={styles.toggle}>
-            <AiOutlineOrderedList className={styles.icon} />
-          </button>
+          <NavList />
         </nav>
         {children}
         <ArrowUp />

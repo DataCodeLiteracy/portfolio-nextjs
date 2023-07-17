@@ -4,7 +4,7 @@ import articleStyles from '../components/About.module.css'
 
 const AboutMe = () => {
   return (
-    <section id="#about" className={`${styles.section} ${styles.about}`}>
+    <section id="about" className={`${styles.section} ${styles.about}`}>
       <div className={articleStyles.img}>이미지</div>
       <article className={articleStyles.article}>
         <p>Full Stack 개발자를 꿈꾸는 Front-end 개발자 입니다.</p>

@@ -4,7 +4,7 @@ import skillsStyles from '../components/Skills.module.css'
 
 const Skills = () => {
   return (
-    <section id="#about" className={`${styles.section} ${styles.skills}`}>
+    <section id="skills" className={`${styles.section} ${styles.skills}`}>
       <div className={skillsStyles.container}>
         <h1>Skills</h1>
         <div className={skillsStyles.buttonGroup}>

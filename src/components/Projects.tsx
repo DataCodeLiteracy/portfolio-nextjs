@@ -7,7 +7,7 @@ import { AiFillGithub } from 'react-icons/ai'
 
 const Projects = () => {
   return (
-    <section id="#about" className={`${styles.section} ${styles.projects}`}>
+    <section id="projects" className={`${styles.section} ${styles.projects}`}>
       <div className={projectStyles.container}>
         <h1>Projects</h1>
         <div className={projectStyles.projectsContainer}>

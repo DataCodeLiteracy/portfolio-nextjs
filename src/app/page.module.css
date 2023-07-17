@@ -1,3 +1,7 @@
+.body {
+  position: relative;
+}
+
 .section {
   width: 100%;
 }
@@ -14,20 +18,89 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
+}
+
+.nav button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 40px;
+  margin-left: 10px;
+  margin-right: 20px;
+  color: rgb(242, 6, 234, 0.6);
+}
+
+.navList {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  height: 100vh;
+  padding: 10px;
+  margin-right: -550px;
+  background-color: rgb(206, 155, 235);
+  transition: margin 0.7s ease-in-out;
+}
+
+.navList.active {
+  margin: 0px;
+}
+
+.navList ul {
+  z-index: 9000;
+}
+
+.navList ul li {
+  list-style: none;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.navList ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navList ul li a:hover {
   color: white;
 }
 
-.logo {
-  display: flex;
+.closeBtn {
+  margin: 50px 0 30px 50px;
+  cursor: pointer;
+  font-size: 30px;
 }
 
 .toggle {
   margin: 10px 30px 10px 0;
 }
 
+.arrowUp {
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
 .logo div {
   margin: 10px;
+}
+
+.percent {
+  position: fixed;
+  z-index: 1000;
+  width: 0%;
+  height: 5px;
+  background-color: rgb(114, 214, 199);
 }
 
 /* .home {

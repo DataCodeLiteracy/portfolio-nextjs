@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const Contact = () => {
   return (
-    <section id="#about" className={`${styles.section} ${styles.contact}`}>
+    <section id="contact" className={`${styles.section} ${styles.contact}`}>
       <div className={contactStyles.container}>
         <h1>Contact</h1>
         <div className={contactStyles.listWrapper}>

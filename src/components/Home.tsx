@@ -2,11 +2,11 @@ import React from 'react'
 import styles from '../app/page.module.css'
 import homeStyles from '../components/Home.module.css'
 import Image from 'next/image'
-import HomeLogic from '../Hooks/maskAndZoom'
+import HomeLogic from '../components/HomeLogic'
 
 const Home = () => {
   return (
-    <section id="#home" className={`${styles.section} ${styles.home} ${homeStyles.fix_motion}`}>
+    <section id="home" className={`${styles.section} ${styles.home} ${homeStyles.fix_motion}`}>
       <article className={homeStyles.sticky_cont}>
         <div className={homeStyles.cont_box}>
           <div className={`${homeStyles.intro_txt}`}>

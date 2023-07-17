@@ -10,6 +10,7 @@ import { SiVelog } from 'react-icons/si'
 import Link from 'next/link'
 import ArrowUp from '../components/ArrowUp'
 import NavList from '../components/NavList'
+import PercentBar from '../components/PercentBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={`${inter.className} ${styles.body}`}>
+        <PercentBar />
         <nav className={styles.nav}>
           <div className={styles.logo}>
             <Link href="#">

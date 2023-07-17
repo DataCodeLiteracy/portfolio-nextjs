@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../app/page.module.css'
 import homeStyles from '../components/Home.module.css'
 import Image from 'next/image'
-import HomeLogic from '../Hooks/maskAndZoom'
+import HomeLogic from '../components/HomeLogic'
 
 const Home = () => {
   return (

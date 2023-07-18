@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from '../app/page.module.css'
-import contactStyles from '../components/Contact.module.css'
+import styles from '../../app/page.module.css'
+import contactStyles from '../Contact/Contact.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import Email from '../components/Email'
+import Email from '../../components/Email'
 import { AiFillGithub } from 'react-icons/ai'
 import { SiVelog } from 'react-icons/si'
 

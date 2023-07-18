@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from '../app/page.module.css'
-import articleStyles from '../components/About.module.css'
+import styles from '../../app/page.module.css'
+import articleStyles from '../About/About.module.css'
 import Image from 'next/image'
-import Description from '../components/Description'
+import Description from '../../components/Description'
 
 const AboutMe = () => {
   return (

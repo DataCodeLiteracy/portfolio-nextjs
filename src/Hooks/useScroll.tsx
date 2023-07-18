@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
-import homeStyles from '../components/Home.module.css'
+import homeStyles from '../components/Home/Home.module.css'
 import debounce from '../utils/debounce.ts'
 
 const useScroll = () => {

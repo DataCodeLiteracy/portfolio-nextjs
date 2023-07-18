@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '../app/page.module.css'
-import skillsStyles from '../components/Skills.module.css'
+import styles from '../../app/page.module.css'
+import skillsStyles from '../Skills/Skills.module.css'
 
 const Skills = () => {
   return (

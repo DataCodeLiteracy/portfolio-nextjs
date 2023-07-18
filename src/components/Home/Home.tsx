@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from '../app/page.module.css'
-import homeStyles from '../components/Home.module.css'
+import styles from '../../app/page.module.css'
+import homeStyles from '../Home/Home.module.css'
 import Image from 'next/image'
-import HomeLogic from '../components/HomeLogic'
+import MaskAndZoom from '../../components/MaskAndZoom'
 
 const Home = () => {
   return (
@@ -34,7 +34,7 @@ const Home = () => {
           </div>
         </div>
       </article>
-      <HomeLogic />
+      <MaskAndZoom />
     </section>
   )
 }

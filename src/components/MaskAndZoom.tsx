@@ -1,9 +1,9 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react'
-import homeStyles from '../components/Home.module.css'
+import homeStyles from '../components/Home/Home.module.css'
 import useScroll from '../Hooks/useScroll'
 
-const HomeLogic = () => {
+const MaskAndZoom = () => {
   const { scrollPercent } = useScroll()
 
   const [maskValue, setMaskValue] = useState(50)
@@ -56,4 +56,4 @@ const HomeLogic = () => {
   return null
 }
 
-export default HomeLogic
+export default MaskAndZoom

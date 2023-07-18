@@ -1,6 +1,6 @@
 'use client'
 import React, { useRef, useState, useEffect } from 'react'
-import articleStyles from '../components/About.module.css'
+import articleStyles from '../components/About/About.module.css'
 import Image from 'next/image'
 
 const Description = () => {

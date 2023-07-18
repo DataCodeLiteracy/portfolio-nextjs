@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '../app/page.module.css'
-import experienceStyles from '../components/Experience.module.css'
+import styles from '../../app/page.module.css'
+import experienceStyles from '../Experience/Experience.module.css'
 
 const Experience = () => {
   return (

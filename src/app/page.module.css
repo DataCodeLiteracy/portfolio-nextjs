@@ -36,6 +36,13 @@
   color: rgb(242, 6, 234, 0.6);
 }
 
+.email {
+  display: inline-block;
+  font-size: 40px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
 .navList {
   position: fixed;
   right: 0;

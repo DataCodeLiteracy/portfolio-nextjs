@@ -16,13 +16,13 @@ const Contact = () => {
           <Image src="/Images/contactme.webp" alt="" width={400} height={400} />
           <div className={contactStyles.list}>
             <div>
-              <Email icon={true} address={true} />
+              <Email icon={true} address={true} size="20px" />
             </div>
             <div>
               <Link href="https://github.com/DataCodeLiteracy" target="_blank">
                 <AiFillGithub />
               </Link>
-              <Link href="https://github.com/DataCodeLiteracy" target="_blank">
+              <Link href="https://github.com/DataCodeLiteracy" target="_blank" className={contactStyles.title}>
                 https://github.com/DataCodeLiteracy
               </Link>
             </div>
@@ -30,7 +30,7 @@ const Contact = () => {
               <Link href="https://velog.io/@dataliteracy" target="_blank">
                 <SiVelog />
               </Link>
-              <Link href="https://velog.io/@dataliteracy" target="_blank">
+              <Link href="https://velog.io/@dataliteracy" target="_blank" className={contactStyles.title}>
                 https://velog.io/@dataliteracy
               </Link>
             </div>

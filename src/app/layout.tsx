@@ -38,7 +38,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="https://velog.io/@dataliteracy" target="_blank">
               <SiVelog className={styles.icon} />
             </Link>
-            <Email icon={true} />
+            <div className={styles.email}>
+              <Email icon={true} color="rgb(242, 6, 234, 0.6)" />
+            </div>
           </div>
           <NavList />
         </nav>

@@ -1,6 +1,9 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 80%;
-  margin-top: 20px;
+  margin-top: -100px;
 }
 
 .container h1 {
@@ -22,6 +25,7 @@
 .list div {
   display: flex;
   margin: 20px;
+  font-size: 30px;
 }
 
 .list div button {
@@ -39,4 +43,8 @@
   margin: 20px;
   text-decoration: none;
   color: black;
+}
+
+.title {
+  font-size: 20px;
 }

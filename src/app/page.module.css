@@ -33,7 +33,7 @@
   font-size: 40px;
   margin-left: 10px;
   margin-right: 20px;
-  color: rgb(242, 6, 234, 0.6);
+  color: #f9f871;
 }
 
 .email {
@@ -51,7 +51,7 @@
   height: 100vh;
   padding: 10px;
   margin-right: -550px;
-  background-color: rgb(206, 155, 235);
+  background-color: #563a34;
   transition: margin 0.7s ease-in-out;
 }
 
@@ -66,15 +66,16 @@
 .navList ul li {
   list-style: none;
   font-size: 40px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .navList ul li a {
   text-decoration: none;
-  color: black;
+  color: #e3be5d;
 }
 
 .navList ul li a:hover {
+  border-bottom: 0.5px solid white;
   color: white;
 }
 
@@ -82,6 +83,12 @@
   margin: 50px 0 30px 50px;
   cursor: pointer;
   font-size: 30px;
+  color: #e3be5d;
+}
+
+.closeBtn:hover {
+  color: white;
+  animation: scaleAnimation 2s;
 }
 
 .toggle {
@@ -110,35 +117,27 @@
   background-color: rgb(114, 214, 199);
 }
 
-/* .home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(182, 236, 218);
-} */
-
-.experience {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  background-color: rgb(241, 210, 215);
-}
-
 .about {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: rgb(246, 220, 173);
+  background-color: #1f1c1c;
+}
+
+.experience {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: #5b656b;
 }
 
 .skills {
   display: flex;
   min-height: 100vh;
   justify-content: center;
-  background-color: rgb(188, 194, 236);
+  background-color: #1f1c1c;
 }
 
 .projects {
@@ -146,12 +145,24 @@
   justify-content: center;
   min-height: 100vh;
   padding-bottom: 60px;
-  background-color: rgb(234, 152, 152);
+  background-color: #5b656b;
 }
 
 .contact {
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  background-color: rgb(235, 155, 235);
+  background-color: #1f1c1c;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

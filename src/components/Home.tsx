@@ -11,8 +11,9 @@ const Home = () => {
         <div className={homeStyles.cont_box}>
           <div className={`${homeStyles.intro_txt}`}>
             <h1 className={homeStyles.h1}>
-              Hi!
-              <br />I am Jong Hyun
+              PORTFOLIO
+              <br />
+              WEB SITE
             </h1>
           </div>
           <div className={homeStyles.left_mask}></div>
@@ -23,7 +24,11 @@ const Home = () => {
           <div className={`${homeStyles.ending_txt}`}>
             <div className={homeStyles.tb_row}>
               <div className={homeStyles.tb_cell}>
-                <p>PORTFOLIO</p>
+                <p>
+                  HI!
+                  <br />
+                  I&#39;m JongHyun
+                </p>
               </div>
             </div>
           </div>

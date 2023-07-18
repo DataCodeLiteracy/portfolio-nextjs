@@ -8,6 +8,7 @@
 
 .container h1 {
   font-size: 40px;
+  color: #b0b6b9d4;
 }
 
 .listWrapper {
@@ -42,7 +43,7 @@
 .list a {
   margin: 20px;
   text-decoration: none;
-  color: black;
+  color: rgba(255, 255, 255, 0.358);
 }
 
 .title {

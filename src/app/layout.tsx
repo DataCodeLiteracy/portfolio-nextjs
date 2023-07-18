@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <SiVelog className={styles.icon} />
             </Link>
             <div className={styles.email}>
-              <Email icon={true} color="rgb(242, 6, 234, 0.6)" />
+              <Email icon={true} color="#F9F871" />
             </div>
           </div>
           <NavList />

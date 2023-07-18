@@ -7,15 +7,18 @@
   left: 50px;
   top: 30px;
   font-size: 40px;
+  color: #b0b6b9d4;
 }
 
 .article p {
   font-size: 20px;
-  color: rgb(63, 59, 59);
+  color: #b0b6b9d4;
 }
 
 .article p strong {
   border-bottom: 0.9px solid gray;
+  margin: 0 5px 0 5px;
+  color: rgba(128, 128, 128, 0.636);
 }
 
 .imgBox {

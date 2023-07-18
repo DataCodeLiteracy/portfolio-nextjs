@@ -6,6 +6,7 @@
 
 .container h1 {
   font-size: 40px;
+  color: #b0b6b9d4;
 }
 
 .buttonGroup {
@@ -18,6 +19,8 @@
   font-size: 16px;
   padding: 3px;
   border-radius: 10px;
+  outline: none;
+  background-color: rgba(232, 230, 230, 0.297);
 }
 
 .buttonGroup button:hover {
@@ -41,9 +44,10 @@
   font-size: 30px;
   padding: 10px;
   margin-bottom: 10px;
+  color: #b0b6b9d4;
 }
 
 .description div p {
-  color: gray;
+  color: rgba(232, 230, 230, 0.297);
   line-height: 30px;
 }

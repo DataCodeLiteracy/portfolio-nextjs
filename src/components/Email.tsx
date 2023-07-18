@@ -3,7 +3,14 @@ import React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
 import Link from 'next/link'
 
-const Email = ({ icon, address, color, size }) => {
+interface EmailProps {
+  icon?: boolean
+  address?: boolean
+  color?: string
+  size?: string
+}
+
+const Email: React.FC<EmailProps> = ({ icon, address, color, size }) => {
   const linkPrevent = (e) => {
     e.preventDefault()
     window.location.href = 'mailto:dataliteracy@icloud.com'

@@ -5,7 +5,7 @@ import styles from '../app/page.module.css'
 import Link from 'next/link'
 
 const ArrowUp = () => {
-  const handleScrollToTop = (e) => {
+  const handleScrollToTop = (e: React.UIEvent<HTMLElement>) => {
     e.preventDefault()
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }

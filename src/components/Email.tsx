@@ -11,7 +11,7 @@ interface EmailProps {
 }
 
 const Email: React.FC<EmailProps> = ({ icon, address, color, size }) => {
-  const linkPrevent = (e) => {
+  const linkPrevent = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
     window.location.href = 'mailto:dataliteracy@icloud.com'
   }

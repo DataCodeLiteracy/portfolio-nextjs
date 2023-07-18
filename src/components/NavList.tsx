@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const NavList = () => {
   const [isToggleActive, setToggleActive] = useState(false)
-  const navList = useRef(null)
+  const navList = useRef<HTMLDivElement | null>(null)
 
   const handleToggleClick = () => {
     setToggleActive(!isToggleActive)
@@ -15,7 +15,7 @@ const NavList = () => {
   const handleCloseClick = () => {
     setToggleActive(!isToggleActive)
     if (!isToggleActive) {
-      navList.current.classList.remove(styles.active)
+      navList.current?.classList.remove(styles.active)
     }
   }
 
@@ -23,9 +23,9 @@ const NavList = () => {
     navList.current = document.querySelector(`.${styles.navList}`)
 
     if (isToggleActive) {
-      navList.current.classList.add(styles.active)
+      navList.current?.classList.add(styles.active)
     } else {
-      navList.current.classList.remove(styles.active)
+      navList.current?.classList.remove(styles.active)
     }
   }, [isToggleActive])
 

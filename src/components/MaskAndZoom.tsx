@@ -9,26 +9,26 @@ const MaskAndZoom = () => {
   const [maskValue, setMaskValue] = useState(50)
   const [scaleValue, setScaleValue] = useState(1)
 
-  const titleElementRef = useRef(null)
-  const endingElementRef = useRef(null)
-  const maskLeftRef = useRef(null)
-  const maskRightRef = useRef(null)
-  const imageRef = useRef(null)
+  const titleElementRef = useRef<HTMLDivElement | null>(null as unknown as HTMLDivElement)
+  const endingElementRef = useRef<HTMLDivElement | null>(null as unknown as HTMLDivElement)
+  const maskLeftRef = useRef<HTMLDivElement | null>(null as unknown as HTMLDivElement)
+  const maskRightRef = useRef<HTMLDivElement | null>(null as unknown as HTMLDivElement)
+  const imageRef = useRef<HTMLImageElement | null>(null)
 
   useEffect(() => {
     titleElementRef.current = document.querySelector(`.${homeStyles.intro_txt}`)
     endingElementRef.current = document.querySelector(`.${homeStyles.ending_txt}`)
 
     if (scrollPercent > 0.5) {
-      titleElementRef.current.classList.add(homeStyles.active)
+      titleElementRef.current?.classList.add(homeStyles.active)
     } else {
-      titleElementRef.current.classList.remove(homeStyles.active)
+      titleElementRef.current?.classList.remove(homeStyles.active)
     }
 
     if (scrollPercent >= 70) {
-      endingElementRef.current.classList.add(homeStyles.active)
+      endingElementRef.current?.classList.add(homeStyles.active)
     } else {
-      endingElementRef.current.classList.remove(homeStyles.active)
+      endingElementRef.current?.classList.remove(homeStyles.active)
     }
   }, [scrollPercent])
 
@@ -47,10 +47,14 @@ const MaskAndZoom = () => {
     maskRightRef.current = document.querySelector(`.${homeStyles.right_mask}`)
     imageRef.current = document.querySelector(`.${homeStyles.bg_img}`)
 
-    maskLeftRef.current.style.width = `${maskValue}%`
-    maskRightRef.current.style.width = `${maskValue}%`
+    if (maskLeftRef.current && maskRightRef.current) {
+      maskLeftRef.current.style.width = `${maskValue}%`
+      maskRightRef.current.style.width = `${maskValue}%`
+    }
 
-    imageRef.current.style.transform = `scale(${scaleValue})`
+    if (imageRef.current) {
+      imageRef.current.style.transform = `scale(${scaleValue})`
+    }
   }, [maskValue, scaleValue, scrollPercent])
 
   return null

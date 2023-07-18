@@ -6,11 +6,13 @@ import useScroll from '../Hooks/useScroll'
 const PercentBar = () => {
   const { totalScrollPercent } = useScroll()
 
-  const percentBar = useRef(null)
+  const percentBar = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
     percentBar.current = document.querySelector(`.${styles.percent}`)
-    percentBar.current.style.width = `${totalScrollPercent}%`
+    if (percentBar.current) {
+      percentBar.current.style.width = `${totalScrollPercent}%`
+    }
   }, [totalScrollPercent])
 
   return <div className={styles.percent}></div>
